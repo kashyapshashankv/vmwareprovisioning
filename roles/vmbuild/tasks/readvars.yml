@@ -1,0 +1,5 @@
+---
+  - name: Read User Manifest
+    include_vars:
+      file: usermanifest.yml
+      name: usermanifest

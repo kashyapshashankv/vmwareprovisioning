@@ -1,0 +1,8 @@
+---
+ - include_tasks: readvars.yml
+
+ - include_tasks: parsevars.yml
+
+ - include_tasks: getip.yml
+
+ - include_tasks: mainoperation.yml

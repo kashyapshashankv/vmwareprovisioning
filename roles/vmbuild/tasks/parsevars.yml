@@ -1,0 +1,18 @@
+---
+  - name: Parse User Manifest
+    set_fact:
+       ad_domain: '{{usermanifest["ad_domain"]}}'
+       application_code: '{{usermanifest["application_code"]}}'
+       application_service_id: '{{usermanifest["application_service_id"]}}'
+       application_service_name: '{{usermanifest["application_service_name"]}}'
+       environment: '{{usermanifest["environment"]}}'
+       requestor: '{{usermanifest["requestor"]}}'
+       dcs_type: '{{usermanifest["dcs_type"]}}'
+       rdr_class: '{{usermanifest["rdr_class"]}}'
+       cpu: '{{usermanifest["cpu"]}}'
+       memory: '{{usermanifest["memory"][0:-1]*1024 | int }}'
+       environment_zone: '{{usermanifest["environment_zone"]}}'
+       software_family: '{{usermanifest["software_family"]}}'
+       server_type: '{{usermanifest["server_type"]}}'
+       options: '{{usermanifest["options"]}}'
+       servers: '{{usermanifest["servers"]}}'

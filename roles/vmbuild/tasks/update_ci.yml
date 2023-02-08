@@ -1,0 +1,6 @@
+---
+ - set_fact:
+       ci_update: "{{server_hostname}}-{{ip_address}}-{{server_memory}}-{{server_cpu}}-{{creationdate}}"
+       
+ - debug:
+       msg : "CI created with following details {{ ci_update }}"

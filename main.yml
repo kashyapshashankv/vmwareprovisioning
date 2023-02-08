@@ -1,0 +1,18 @@
+---
+  - name: vCenter VM build
+    hosts: localhost
+    gather_facts: no
+    vars_prompt:
+      - name: server_hostname
+        prompt: Server Hostname?
+        private: false
+
+      - name: server_cpu
+        prompt: Server CPU?
+        private: false
+
+      - name: server_memory
+        prompt: Server Memory in MB?
+        private: false
+    roles:
+      - vmbuild

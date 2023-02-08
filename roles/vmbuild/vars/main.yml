@@ -1,0 +1,8 @@
+---
+vcenter_hostname: fihe7lpvcs01.tcsecp.com
+vcenter_username: 1570658@tcsecp.com
+vcenter_password: bXp2zC$k$5Ky7@
+cluster: FIHE7-XaaS
+datacenter: FIHE7-XaaS
+folder: Testfolder
+templatename: Rhel7image-testing

@@ -1,0 +1,34 @@
+---
+ad_domain: xyz.euroclear.com
+application_code: PCA
+application_service_id: P4448-PCA
+application_service_name: PrivClAuto Production validatio6
+environment: Production
+requestor: William Leemans
+application_node_number: 1
+dcs_type: 4a
+rdr_class: 1
+cpu: 4
+memory: 16G
+environment_zone: trusted
+software_family: rhel8-std
+server_type: standalone
+options:
+  - name: mqm_prereq
+    parameters:
+      install_mqm_queue_name: "pca_queue"
+  - name: iib_prereq
+    parameters:
+      iib_integration_node: "some_node"
+      install_mqm_queue_name: "pca_queue"
+servers:
+  - name: p1tlipca01std
+    network:
+      nic:
+        - vlan: "1466"
+          type: management
+  - name: p2tlipca01std
+    network:
+      nic:
+        - vlan: "1466"
+          type: management

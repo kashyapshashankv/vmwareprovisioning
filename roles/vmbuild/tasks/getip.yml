@@ -1,0 +1,8 @@
+---
+ - set_fact:
+       ip_address: "192.168.18.179"
+       netmask: "255.255.255.192"
+       gateway: "192.168.18.129"
+       dns_server1: "192.168.18.150"
+       dns_server2: "192.168.18.151"
+       vlanname : "XaaS|AP|epg_XaaS_DMZ_HCM"
