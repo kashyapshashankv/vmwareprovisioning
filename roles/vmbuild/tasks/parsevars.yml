@@ -10,11 +10,11 @@
        dcs_type: '{{usermanifest["dcs_type"]}}'
        rdr_class: '{{usermanifest["rdr_class"]}}'
        cpu: '{{usermanifest["cpu"]}}'
-       memory_gb: '{{usermanifest["memory"][0:-1] | int }}'
+       memory_gb: '{{usermanifest["memory"][0:-1] | int * 1024 }}'
        environment_zone: '{{usermanifest["environment_zone"]}}'
        software_family: '{{usermanifest["software_family"]}}'
        server_type: '{{usermanifest["server_type"]}}'
        options: '{{usermanifest["options"]}}'
        servers: '{{usermanifest["servers"]}}'
   - set_fact: 
-         memory: '{{ memory_gb*1024 | int }}'
+         memory: '{{ memory_gb| int * 1024}}'
