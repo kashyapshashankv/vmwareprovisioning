@@ -3,8 +3,6 @@
 
  - include_tasks: parsevars.yml
 
- - include_tasks: getip.yml
-
  - include_tasks: mainoperation.yml
    loop: "{{servers}}"
    loop_control:
