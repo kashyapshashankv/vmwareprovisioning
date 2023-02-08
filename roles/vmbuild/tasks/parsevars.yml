@@ -18,6 +18,9 @@
   #      servers: '{{usermanifest["servers"]}}'
 
   - set_fact: 
+       memory: '{{memory[0:-1] | int * 1024 }}'
+
+  - set_fact: 
        cluster: 'cluster'
     when: "'Production' in  environment"
 
