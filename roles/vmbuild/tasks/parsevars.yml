@@ -27,9 +27,9 @@
 
 
   - set_fact: 
-       templatename: "Rhel7image-testing"
+       templatename: 'Rhel7image-testing'
     when: 'rhel8-std' in  software_family
 
   - set_fact: 
-       templatename: "Rhel7image-testing"
+       templatename: 'Rhel7image-testing'
     when: 'rhel8-std' in  software_family
