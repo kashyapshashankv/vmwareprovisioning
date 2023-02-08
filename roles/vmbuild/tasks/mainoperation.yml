@@ -29,7 +29,7 @@
       hostname: '{{ vcenter_hostname }}'
       username: '{{ vcenter_username }}'
       password: '{{ vcenter_password }}'
-      vm_name: '{{ server['name'] }}'
+      vm_name: "{{ server['name'] }}"
       validate_certs: false
     delegate_to: localhost
     register: vm_info
