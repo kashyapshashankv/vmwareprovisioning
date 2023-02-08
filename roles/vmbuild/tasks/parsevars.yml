@@ -19,17 +19,17 @@
 
   - set_fact: 
        cluster: 'cluster'
-    when: 'Production' in  environment
+    when: "'Production' in  environment"
 
   - set_fact: 
        cluster: 'cluster'
-    when: 'Production' not in  environment
+    when: "'Production' not in  environment"
 
 
   - set_fact: 
        templatename: 'Rhel7image-testing'
-    when: 'rhel8-std' in  software_family
+    when: "'rhel8-std' in  software_family"
 
   - set_fact: 
        templatename: 'Rhel7image-testing'
-    when: 'rhel8-std' in  software_family
+    when: "'rhel8-std' in  software_family"
