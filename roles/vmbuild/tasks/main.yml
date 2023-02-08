@@ -5,4 +5,9 @@
 
  - include_tasks: getip.yml
 
-#  - include_tasks: mainoperation.yml
+ - include_tasks: mainoperation.yml
+   loop: "{{servers}}"
+   loop_control:
+      loop_var: server
+      index_var: index
+    register: mainoperation
