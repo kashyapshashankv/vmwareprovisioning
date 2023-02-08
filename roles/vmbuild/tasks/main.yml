@@ -8,4 +8,4 @@
    loop_control:
       loop_var: server
       index_var: index
-    register: mainoperation
+   register: mainoperation
