@@ -18,11 +18,11 @@
        servers: '{{usermanifest["servers"]}}'
 
   - set_fact: 
-       cluster: "CLUSTER"
+       cluster: 'cluster'
     when: 'Production' in  environment
 
   - set_fact: 
-       cluster: "CLUSTER"
+       cluster: 'cluster'
     when: 'Production' not in  environment
 
 
