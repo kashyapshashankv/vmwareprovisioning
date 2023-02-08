@@ -46,7 +46,7 @@
         cluster: '{{ cluster }}'
         datacenter: '{{ datacenter }}'
         folder: '{{ folder }}'
-        name: '{{ server['name'] }}'
+        name: "{{ server['name'] }}"
         state: poweredon
         annotation: "Created by Ansible"
         disk:
@@ -72,7 +72,7 @@
             - '{{ dns_server1 }}'
             - '{{ dns_server2 }}'
           domain : '{{ ad_domain }}'
-          hostname: '{{ server['name'] }}'
+          hostname: "{{ server['name'] }}"
         template: '{{ templatename }}'
         wait_for_ip_address: yes
         wait_for_ip_address_timeout: 600
