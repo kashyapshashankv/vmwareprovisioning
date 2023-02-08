@@ -16,3 +16,20 @@
        server_type: '{{usermanifest["server_type"]}}'
        options: '{{usermanifest["options"]}}'
        servers: '{{usermanifest["servers"]}}'
+
+  - set_fact: 
+       cluster: "CLUSTER"
+    when: 'Production' in  environment
+
+  - set_fact: 
+       cluster: "CLUSTER"
+    when: 'Production' not in  environment
+
+
+  - set_fact: 
+       templatename: "Rhel7image-testing"
+    when: 'rhel8-std' in  software_family
+
+  - set_fact: 
+       templatename: "Rhel7image-testing"
+    when: 'rhel8-std' in  software_family
