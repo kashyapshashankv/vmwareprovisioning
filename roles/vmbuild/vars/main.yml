@@ -2,7 +2,5 @@
 vcenter_hostname: fihe7
 vcenter_username: 1570
 vcenter_password: bXp
-cluster: FIHE7-XaaS
 datacenter: FIHE7-XaaS
 folder: Testfolder
-templatename: Rhel7image-testing

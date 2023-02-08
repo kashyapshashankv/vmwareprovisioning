@@ -83,4 +83,13 @@
     - debug:
           msg : "CI created with following details {{ ci_update }}"
 
+    - name: Sending an email on successful build
+      mail:
+        host: localhost
+        port: 25
+        to: shashank.kumar8@tcs.com
+        subject: "{{server['name']}} successfully Provisioned"
+        body: "Dear {{requestor}} \n\n{{server['name']}} successfully Provisioned with IP {{ip_address}}"
+      delegate_to: localhost
+
     when: false
