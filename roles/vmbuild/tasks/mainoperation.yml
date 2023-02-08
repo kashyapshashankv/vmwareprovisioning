@@ -19,8 +19,8 @@
        vlanname : "XaaS|AP|epg_XaaS_DMZ_HCM"
     when: index | int == 1
 
-    - debug:
-          msg : "CI created with following details {{ server["name"] }} {{ip_address}}"    
+  - debug:
+        msg : "CI created with following details {{ server["name"] }} {{ip_address}}"    
 
   # - name: Check if VM Exists
   #   community.vmware.vmware_vm_info:
