@@ -11,7 +11,7 @@
        rdr_class: '{{usermanifest["rdr_class"]}}'
        cpu: '{{usermanifest["cpu"]}}'
        memory_gb: '{{usermanifest["memory"][0:-1] | int }}'
-       memory_mb: '{{memory_gb*1024| int }}'
+       memory: '{{ memory_gb*1024 | int }}'
        environment_zone: '{{usermanifest["environment_zone"]}}'
        software_family: '{{usermanifest["software_family"]}}'
        server_type: '{{usermanifest["server_type"]}}'
